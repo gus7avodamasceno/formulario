@@ -1,31 +1,36 @@
-/* Reset básico */
+/* Adicione a importação da fonte aqui, se ainda não tiver feito */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Reset aprimorado */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Torna o cálculo de layout mais fácil */
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to bottom, #f5f5f5, #ffffff);
-  height: 100vh;
+  min-height: 100vh; /* Mais seguro para conteúdo que pode crescer */
   display: flex;
   flex-direction: column;
 }
 
-/* Header estilizado */
-
-.header {
-  width: 100vw;      /* Ocupa toda a largura da tela */
-  height: 100vh;     /* Ocupa toda a altura da tela */
-  background: linear-gradient(to right, #e50914, #f59e0b, #facc15);
+header {
+  background: linear-gradient(to right, #a88c8b, #b31217);
+  height: 90px;
   display: flex;
-  align-items: center;  /* Centraliza verticalmente o conteúdo */
-  justify-content: center; /* Centraliza horizontalmente o conteúdo */
-  color: white;       /* Cor do texto */
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Centralização vertical */
+header h1 {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+/* O restante do código está perfeito */
 form {
   display: flex;
   flex-direction: column;
@@ -37,8 +42,7 @@ form {
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
-
-/* Campos */
+D
 label {
   margin: 12px 0 4px;
   font-weight: 500;
@@ -57,7 +61,6 @@ input:focus {
   border-color: #f59e0b;
 }
 
-/* Botão */
 button {
   margin-top: 20px;
   padding: 0.7rem;
